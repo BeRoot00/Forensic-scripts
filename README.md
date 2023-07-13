@@ -27,3 +27,34 @@ The script will read the pcap file and display the source and destination IP add
 
 The GeoLiteCity database used in this script is a free version provided by MaxMind. The accuracy of the geolocation data may vary, and it is recommended to use a licensed version or a more up-to-date geolocation service for production environments.
 
+## getPDFMetadata.py
+
+This Python script allows you to extract metadata from a PDF file.
+
+#### Prerequisites
+
+Make sure you have the following dependencies installed:
+
+- PyPDF2
+
+#### Usage
+
+Run the script with the following command:
+
+```
+python getPDFMetadata.py -f <PDF file name>
+```
+
+Replace `<PDF file name>` with the path to your desired PDF file.
+
+**Note:** The PDF file should be accessible and readable by the script.
+
+#### Example
+
+To extract metadata from a PDF file named `example.pdf`, run the following command:
+
+```
+python getPDFMetadata.py -f example.pdf
+```
+
+The script will display the metadata information for the specified PDF file.
