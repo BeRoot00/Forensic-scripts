@@ -58,3 +58,41 @@ python getPDFMetadata.py -f example.pdf
 ```
 
 The script will display the metadata information for the specified PDF file.
+
+## volatilityResult.py
+
+This Python script allows you to execute a Volatility plugin on a memory image using the Volatility framework. It utilizes the `subprocess` module to run the Volatility command-line tool and captures the output to a specified file.
+
+#### Prerequisites
+
+Make sure you have the following requirements met before running the script:
+
+- Python 3.x installed
+- [Volatility](https://www.volatilityfoundation.org/) framework installed and accessible via the command-line
+
+#### Usage
+
+Modify the following variables in the script to fit your needs:
+
+- `plugin_name`: Specify the name of the Volatility plugin you want to execute.
+- `image_path`: Provide the path to the memory image file you want to analyze.
+- `output_file`: Specify the path where you want to save the output.
+
+```python
+# Specify the Volatility plugin to execute
+plugin_name = 'plugin_name'
+
+# Specify the path to the memory image
+image_path = '/pathToMemory/image.raw'
+
+# Specify the output file path
+output_file = '/pathToOutput/file.txt'
+
+# Run the Volatility plugin
+run_volatility_plugin(plugin_name, image_path, output_file)
+```
+
+Once you have set the required parameters, run the script using a Python interpreter. The script will execute the specified Volatility plugin and store the output in the specified output file.
+
+Note: Make sure you have the necessary permissions to read the memory image and write to the output file.
+
