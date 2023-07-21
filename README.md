@@ -68,7 +68,29 @@ To extract metadata from a PDF file named `example.pdf`, run the following comma
 python getPDFMetadata.py -f example.pdf
 ```
 
-The script will display the metadata information for the specified PDF file.
+Result:
+    [*] Metadata of the PDF:  sample.pdf
+    
+    [+]Author:BeRoot00
+    
+    [+]Title:Example Document
+    
+    [+]Subject:Sample PDF with Metadata
+    
+    [+]Creator:Microsoft® Word 2019
+    
+    [+]Producer:Adobe Acrobat Pro 2020
+    
+    [+]CreationDate:2023-05-15T09:30:00Z
+    
+    [+]ModDate:2023-07-18T14:22:00Z
+    
+    [+]Keywords:example, metadata, PDF
+    
+    [+]Trapped:False
+    
+    [+]Company:Example Inc.
+
 
 ## volatilityResult.py
 
