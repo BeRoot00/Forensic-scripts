@@ -25,13 +25,17 @@ The script will read the pcap file and display the source and destination IP add
 
 Assuming you have a PCAP file named example.pcap containing network traffic, here's an example of what the script output might look like:
     
-    [+] Source: 192.168.1.100 ----> Dst: 151.101.65.69
+    [+] Source: 192.168.1.100 ----> Dst: 216.58.205.110
     
-    [+] Source: Private IP, the address is unregistered ----> Dst: US
+    [+] Source: Mountain View, USA ----> Dst: Mountain View, USA
     
-    [+] Source: 151.101.65.69 ----> Dst: 192.168.1.100
+    [+] Source: 192.168.1.101 ----> Dst: 151.101.65.69
     
-    [+] Source: US ----> Dst: Private IP, the address is unregistered
+    [+] Source: San Francisco, USA ----> Dst: San Francisco, USA
+    
+    [+] Source: 192.168.1.102 ----> Dst: 8.8.8.8
+    
+    [+] Source: New York, USA ----> Dst: Mountain View, USA
 
 
 ## getPDFMetadata.py
