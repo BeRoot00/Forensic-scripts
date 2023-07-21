@@ -127,5 +127,35 @@ run_volatility_plugin(plugin_name, image_path, output_file)
 
 Once you have set the required parameters, run the script using a Python interpreter. The script will execute the specified Volatility plugin and store the output in the specified output file.
 
+Example of output file content:
+    Volatility Foundation Volatility Framework 2.6.1
+    
+    Offset(P)          Name                    PID   PPID PDB        Time created                   Time exited   
+    
+    ------------------ -------------------- ------ ------ ---------- ------------------------------ ------------------------------
+    
+    0x000000001f3c4040 System                    4      0 0x00000000 2021-09-12 10:12:48 UTC+0000 
+    
+    0x000000001f6a7b70 smss.exe                316      4 0x00000000 2021-09-12 10:12:48 UTC+0000 
+    
+    0x000000001f6e9290 csrss.exe               416    408 0x00000000 2021-09-12 10:12:48 UTC+0000 
+    
+    0x000000001f6f7b30 wininit.exe             460    408 0x00000000 2021-09-12 10:12:49 UTC+0000 
+    
+    0x000000001f6ff040 csrss.exe               468    460 0x00000000 2021-09-12 10:12:49 UTC+0000
+    
+    0x000000001f705040 services.exe            504    460 0x00000000 2021-09-12 10:12:49 UTC+0000    
+    
+    0x000000001f707040 lsass.exe               512    460 0x00000000 2021-09-12 10:12:49 UTC+0000 
+    
+    0x000000001f70c040 lsm.exe                 520    460 0x00000000 2021-09-12 10:12:49 UTC+0000  
+    
+    0x000000001f70e040 svchost.exe             564    504 0x00000000 2021-09-12 10:12:49 UTC+0000  
+    
+    0x000000001f713040 svchost.exe             624    504 0x00000000 2021-09-12 10:12:50 UTC+0000
+    
+    0x000000001f71b040 fontdrvhost.exe         676    504 0x00000000 2021-09-12 10:12:50 UTC+0000                                 
+
+
 Note: Make sure you have the necessary permissions to read the memory image and write to the output file.
 
