@@ -65,7 +65,7 @@ python getPDFMetadata.py -f example.pdf
 
 Result:
 ```bash
-    [*] Metadata of the PDF:  sample.pdf
+    [*] Metadata of the PDF:  example.pdf
     [+]Author:BeRoot00
     [+]Title:Example Document
     [+]Subject:Sample PDF with Metadata
