@@ -23,9 +23,16 @@ Replace <pcap file> with the path to your pcap file.
 
 The script will read the pcap file and display the source and destination IP addresses along with their corresponding geolocation information (city and country). If the IP address is not found in the GeoLiteCity database or is a private IP address, it will display a message indicating that the address is unregistered.
 
-#### Disclaimer
+Assuming you have a PCAP file named example.pcap containing network traffic, here's an example of what the script output might look like:
+    
+    [+] Source: 192.168.1.100 ----> Dst: 151.101.65.69
+    
+    [+] Source: Private IP, the address is unregistered ----> Dst: US
+    
+    [+] Source: 151.101.65.69 ----> Dst: 192.168.1.100
+    
+    [+] Source: US ----> Dst: Private IP, the address is unregistered
 
-The GeoLiteCity database used in this script is a free version provided by MaxMind. The accuracy of the geolocation data may vary, and it is recommended to use a licensed version or a more up-to-date geolocation service for production environments.
 
 ## getPDFMetadata.py
 
